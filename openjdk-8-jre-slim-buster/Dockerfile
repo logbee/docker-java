@@ -2,4 +2,4 @@ FROM openjdk:8u222-jre-slim-buster
 RUN apt-get update && \
     apt-get install -y curl tini && \
     apt-get clean
-ENTRYPOINT ["/sbin/tini", "-v", "--"]
+ENTRYPOINT ["/usr/bin/tini", "-v", "--"]
